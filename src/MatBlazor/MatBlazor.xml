@@ -114,6 +114,21 @@
             Acts as a container for items such as application title, navigation icon, and action items.
             </summary>
         </member>
+        <member name="P:MatBlazor.BaseMatAutocomplete`2.ItemValueSelector">
+            <summary>
+            This function is used to select the string part from the item, used both for filtering and displaying if no ItemTemplate is defined.
+            </summary>
+        </member>
+        <member name="P:MatBlazor.BaseMatAutocomplete`2.NumberOfElementsInPopup">
+            <summary>
+            Maximum number of elements displayed in the popup
+            </summary>
+        </member>
+        <member name="P:MatBlazor.BaseMatAutocomplete`2.ItemTemplate">
+            <summary>
+            ItemTemplate is used to render the elements in the popup if no template is given then the string value of the objects is displayed..
+            </summary>
+        </member>
         <member name="T:MatBlazor.BaseMatAutocompleteList`1">
             <summary>
             The autocomplete is a normal text input enhanced by a panel of suggested options.
@@ -195,21 +210,6 @@
             Clears current value of the autocomplete text
             </summary>
             <param name="e"></param>
-        </member>
-        <member name="P:MatBlazor.BaseMatAutocomplete`2.ItemValueSelector">
-            <summary>
-            This function is used to select the string part from the item, used both for filtering and displaying if no ItemTemplate is defined.
-            </summary>
-        </member>
-        <member name="P:MatBlazor.BaseMatAutocomplete`2.NumberOfElementsInPopup">
-            <summary>
-            Maximum number of elements displayed in the popup
-            </summary>
-        </member>
-        <member name="P:MatBlazor.BaseMatAutocomplete`2.ItemTemplate">
-            <summary>
-            ItemTemplate is used to render the elements in the popup if no template is given then the string value of the objects is displayed..
-            </summary>
         </member>
         <member name="T:MatBlazor.BaseMatButton">
             <summary>
@@ -354,6 +354,11 @@
             Quickly and responsively toggle the visibility value of components and more with our hidden utilities.
             </summary>
         </member>
+        <member name="T:MatBlazor.BaseMatIcon">
+            <summary>
+            Makes it easier to use vector-based icons in your app.
+            </summary>
+        </member>
         <member name="T:MatBlazor.BaseMatIconButton">
             <summary>
             Icons are appropriate for buttons that allow a user to take actions or make a selection, such as adding or removing a star to an item.
@@ -402,11 +407,6 @@
         <member name="P:MatBlazor.BaseMatIconButton.OnClickStopPropagation">
             <summary>
             Stop propagation of the OnClick event
-            </summary>
-        </member>
-        <member name="T:MatBlazor.BaseMatIcon">
-            <summary>
-            Makes it easier to use vector-based icons in your app.
             </summary>
         </member>
         <member name="T:MatBlazor.BaseMatList">
@@ -552,6 +552,11 @@
             The MatSortHeader and MatSortHeaderRow are used, respectively, to add sorting state and display to tabular data.
             </summary>
         </member>
+        <member name="T:MatBlazor.BaseMatTabGroup">
+            <summary>
+            MatTabGroup organize content into separate views where only one view can be visible at a time. Each tab's label is shown in the tab header and the active tab's label is designated with the animated ink bar.
+            </summary>
+        </member>
         <member name="T:MatBlazor.BaseMatTabBar">
             <summary>
             WARNING: In Development progress
@@ -637,11 +642,6 @@
             Mat Table Row display a table row   
             </summary>
         </member>
-        <member name="T:MatBlazor.BaseMatTabGroup">
-            <summary>
-            MatTabGroup organize content into separate views where only one view can be visible at a time. Each tab's label is shown in the tab header and the active tab's label is designated with the animated ink bar.
-            </summary>
-        </member>
         <member name="P:MatBlazor.BaseMatInputTextComponent`1.ReadOnly">
             <summary>
             When true, it specifies that an input field is read-only.
@@ -703,6 +703,18 @@
             Text color on top of a surface background
             </summary>
         </member>
+        <member name="T:MatBlazor.BaseMatToastItem">
+            <summary>
+            Toasts provide brief notifications or messages about app processes
+            </summary>
+        </member>
+        <member name="T:MatBlazor.MatToast">
+            <inheritdoc />
+            <summary>
+            Represents an instance of a Toast
+            It handles the user interactions and orchestrates the the state transitions
+            </summary>
+        </member>
         <member name="T:MatBlazor.BaseMatToastContainer">
             <summary>
             Toasts provide brief notifications or messages about app processes
@@ -749,18 +761,6 @@
             Hides the specified <see cref="T:MatBlazor.MatToast"/>
             </summary>
             <param name="matToast">The <see cref="T:MatBlazor.MatToast"/> to be hidden</param>
-        </member>
-        <member name="T:MatBlazor.BaseMatToastItem">
-            <summary>
-            Toasts provide brief notifications or messages about app processes
-            </summary>
-        </member>
-        <member name="T:MatBlazor.MatToast">
-            <inheritdoc />
-            <summary>
-            Represents an instance of a Toast
-            It handles the user interactions and orchestrates the the state transitions
-            </summary>
         </member>
         <member name="T:MatBlazor.BaseMatTooltip">
             <summary>

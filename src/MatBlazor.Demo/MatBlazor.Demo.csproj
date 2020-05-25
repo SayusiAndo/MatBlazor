@@ -23,4 +23,13 @@
   <ItemGroup>
     <Folder Include="Doc" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Pages\DemoAccordionPage.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Demo\DemoAccordion.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+  </ItemGroup>
 </Project>

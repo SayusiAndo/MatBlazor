@@ -1,0 +1,49 @@
+@* <DocMatAccordion></DocMatAccordion> *@
+
+
+<MatH3>MatAccordion</MatH3>
+
+<MatAccordion>
+    <MatExpansionPanel>
+        <MatExpansionPanelHeader>
+            <MatExpansionPanelSubHeader>
+                Subheader
+            </MatExpansionPanelSubHeader>
+        </MatExpansionPanelHeader>
+        <MatExpansionPanelSummary>
+            <MatExpansionPanelDetails>
+
+
+                Pure details
+            </MatExpansionPanelDetails>
+        </MatExpansionPanelSummary>
+    </MatExpansionPanel>
+</MatAccordion>
+
+<h5 class="mat-h5">Example</h5>
+<DemoContainer>
+    <Content>
+        Content
+    </Content>
+    <SourceContent>
+        <BlazorFiddle Template="MatBlazor" Code=@(@"
+        <MatAutocomplete Items=""@options"" Label=""Pick one"" @bind-Value=""@value""></MatAutocomplete>
+
+        @code
+        {
+
+            string value;
+
+            string[] options = new[]
+            {
+                ""One"",
+                ""Two"",
+                ""Three""
+            };
+
+        }
+
+    ")>
+        </BlazorFiddle>
+    </SourceContent>
+</DemoContainer>
